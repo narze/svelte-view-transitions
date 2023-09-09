@@ -2,8 +2,10 @@
 	import { transition } from '$lib/transition';
 </script>
 
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Svelte View Transitions</h1>
 
-<a href="/1" use:transition={{ name: 'title', type: 'astroFade' }}>Link to another page</a>
+<ul>
+	<li><a href="/1" use:transition={'one'}>Page One</a></li>
+	<li><a href="/2" use:transition={{ name: 'two' }}>Page Two</a></li>
+	<li><a href="/3" use:transition={{ name: 'three', type: 'astroFade' }}>Page Three</a></li>
+</ul>
